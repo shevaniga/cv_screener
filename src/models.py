@@ -45,6 +45,8 @@ class CandidateResult(BaseModel):
     rank: int | None = None        
     candidate_name: str
     file_name: str
+    email: str | None = None
+    github_url: str | None = None
     eligible: bool
     total_score: int | None = None
     score_breakdown: ScoreBreakdown | None = None
@@ -52,6 +54,8 @@ class CandidateResult(BaseModel):
     rejection_reasons: list[str] = []
     project_summary: str = ""
     github_summary: str = ""
+    github_status: str = ""
+    llm_status: str = ""
     strengths: list[str] = []
     concerns: list[str] = []
     evidence: dict[str, list[str]] = {}  
@@ -63,3 +67,10 @@ class ScoringResult(BaseModel):
     strengths: list[str] = []
     concerns: list[str] = []
     project_summary: str = ""
+
+
+class ProjectJudgement(BaseModel):
+    ai_depth_score: int = Field(ge=0, le=40)
+    is_thin_wrapper: bool
+    reason: str
+    evidence_quote: str

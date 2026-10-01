@@ -516,6 +516,7 @@ GITHUB_RESERVED_PATHS = {"features", "orgs", "organizations", "topics", "sponsor
 
 #env
 
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 LLM_API_KEY = os.getenv("LLM_API_KEY", "")
 LLM_MODEL = os.getenv("LLM_MODEL", "")
 
@@ -550,3 +551,18 @@ TUTORIAL_HINTS = [
 THIN_WRAPPER_PENALTY = 10
 TUTORIAL_PENALTY = 5
 NO_STRONG_AI_TOTAL_CAP = 50
+
+
+GITHUB_API = "https://api.github.com"
+GITHUB_TIMEOUT = 10
+GITHUB_WORKERS = 5
+GITHUB_RECENT_DAYS = 30
+GITHUB_WINDOW_DAYS = 90
+GITHUB_MAINTAINED_DAYS = 365
+
+LLM_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+LLM_TIMEOUT = 30
+LLM_WORKERS = 2
+LLM_RETRY_SECONDS = 5
+LLM_MAX_ADJUST = 8
+LLM_MAX_INPUT_CHARS = 6000
