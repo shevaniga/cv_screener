@@ -1,6 +1,11 @@
+@"
 .env
 .env.local
 .env.*
 !.env.example
 .venv/
 __pycache__/
+
+output/*
+!output/results.json
+"@ | Set-Content .gitignore

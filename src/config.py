@@ -1,7 +1,8 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv() 
+load_dotenv(".env.local")
+load_dotenv()
 
 WEIGHTS = {
     "ai_project_depth": 40,
