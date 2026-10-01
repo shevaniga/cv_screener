@@ -1,0 +1,6 @@
+pypdf
+pydantic
+httpx
+python-dotenv
+pytest
+reportlab

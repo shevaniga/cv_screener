@@ -1,7 +1,6 @@
 .env
+.env.local
+.env.*
+!.env.example
 .venv/
 __pycache__/
-*.pyc
-resumes/
-output/
-.pytest_cache/
