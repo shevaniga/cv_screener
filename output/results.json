@@ -2492,7 +2492,7 @@
       "project_summary": "[projects] Soil Classification for Sustainable Agriculture — Python, Flask, Scikit-learn Jan 2024 – Jun 2024",
       "github_summary": "No GitHub profile found on resume",
       "github_status": "no_profile",
-      "llm_status": "used",
+      "llm_status": "failed: HTTPStatusError (rule-based score used)",
       "strengths": [
         "Python used in projects/work, not just listed as a skill",
         "Backend tools used: authentication, authorization, database, database schema, flask, jwt, mysql, oauth"
@@ -2505,9 +2505,6 @@
           "[skills] Languages: Java, JavaScript, Python, C++",
           "[projects] Soil Classification for Sustainable Agriculture — Python, Flask, Scikit-learn Jan 2024 – Jun 2024",
           "[projects] • Engineered a machine learning web application that classifies soil types based on key engineering properties (texture, pH, moisture content,"
-        ],
-        "llm_review": [
-          "The candidate trained and evaluated multiple scikit-learn models within an end-to-end classification pipeline. | quote: Trained and evaluated multiple Scikit-learn classification models, tuning hyperparameters to reach 85% prediction accuracy."
         ],
         "ai_project_depth": [
           "[projects] Soil Classification for Sustainable Agriculture — Python, Flask, Scikit-learn Jan 2024 – Jun 2024",
