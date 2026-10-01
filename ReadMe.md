@@ -442,6 +442,8 @@ The LLM is used as a controlled scoring-assistance layer rather than as the sole
 
 
 
+
+
 GitHub and LLM failures do not stop the batch. The system records the status and continues using the available deterministic information.
 
 
