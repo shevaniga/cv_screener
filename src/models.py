@@ -55,3 +55,11 @@ class CandidateResult(BaseModel):
     strengths: list[str] = []
     concerns: list[str] = []
     evidence: dict[str, list[str]] = {}  
+
+class ScoringResult(BaseModel):
+    breakdown: ScoreBreakdown
+    total_score: int
+    evidence: dict[str, list[str]] = {}
+    strengths: list[str] = []
+    concerns: list[str] = []
+    project_summary: str = ""

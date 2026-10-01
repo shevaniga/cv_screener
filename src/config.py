@@ -518,3 +518,35 @@ GITHUB_RESERVED_PATHS = {"features", "orgs", "organizations", "topics", "sponsor
 
 LLM_API_KEY = os.getenv("LLM_API_KEY", "")
 LLM_MODEL = os.getenv("LLM_MODEL", "")
+
+
+
+#eliginlity settings
+WEAK_SECTIONS = {"skills", "summary", "achievements"}
+IGNORED_SECTIONS = {"education"}      
+AI_GENERIC_TERMS = ["llm"]             
+ALLOW_CLASSICAL_ML_ELIGIBLE = True    
+SKILL_VOCAB = [
+    "Python", "Java", "JavaScript", "TypeScript", "C++", "SQL", "React",
+    "Next.js", "Node.js", "Spring Boot", "FastAPI", "Django", "Flask",
+    "PostgreSQL", "MongoDB", "MySQL", "Redis", "Docker", "Kubernetes",
+    "GCP", "AWS", "Azure",
+]
+
+AI_DEPTH_MARKERS = [
+    "retrieval", "tool", "orchestration", "state", "stateful", "evaluation",
+    "pipeline", "workflow", "memory", "chunking", "reranking", "guardrails",
+    "agent",
+]
+
+AI_WRAPPER_ONLY_TERMS = [
+    "llm", "openai api", "gemini api", "claude api", "anthropic api",
+]
+
+TUTORIAL_HINTS = [
+    "tutorial", "clone of", "following along", "udemy", "course project",
+]
+
+THIN_WRAPPER_PENALTY = 10
+TUTORIAL_PENALTY = 5
+NO_STRONG_AI_TOTAL_CAP = 50

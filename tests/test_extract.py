@@ -42,3 +42,8 @@ def test_sections_split_on_headings():
     assert s["skills"] == "Python, FastAPI"
     assert s["projects"] == "Built RAG bot"
     assert s["experience"] == "Intern at X"
+
+
+def test_email_typo_in_link_is_ignored():
+    r = resume("kartikay.sinha17@gmail.com", ["mailto:kartikay.sinhal7@gmail.com"])
+    assert extract_email(r) == "kartikay.sinha17@gmail.com"
